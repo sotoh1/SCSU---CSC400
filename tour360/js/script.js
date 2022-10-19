@@ -8,7 +8,8 @@ function myFunction() {
   }
 }
 
-let slideIndex = 0;
+
+var slideIndex = 0;
 showSlides();
 
 function showSlides() {
@@ -25,5 +26,24 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 5000); // Change image every 2 seconds //background-image: url('../Southern_Connecticut_Fighting_Owls_logo.svg')
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
 }
+
+
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+
