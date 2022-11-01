@@ -342,3 +342,29 @@ html {
     display: block;
   }
 }
+
+/* Start of hours of operation stylings */
+.hrstable{
+  border:1px solid black;
+  width: 100%;
+}
+
+.hrstable th{
+  border:1px solid black;
+  font-size:15px;
+}
+
+.hrstable th a{
+  font-size:15px;
+  text-align: center;
+  padding: 5px;
+}
+
+.hrstable td{
+  border:1px solid black;
+  font-size:15px;
+  padding: 2px;
+  text-align: center;
+}
+
+/* End of hours of operation stylings */
