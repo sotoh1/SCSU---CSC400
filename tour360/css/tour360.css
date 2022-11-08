@@ -3,6 +3,15 @@ body {
 	margin:0;font-family:Arial
 }
 
+/*CENTER FOR 360 TOUR div */
+.center {
+  border-radius: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 .topnav {
   overflow: hidden;
   background-color: #79797B;
@@ -18,9 +27,14 @@ body {
   font-size: 25px;
 }
 
+
+.hov{
+  color: #79797B;
+  ;
+}
+
 .active {
-  background-color: #081993;
-  color: white;
+  color: rgb(255, 251, 251);
 }
 
 .topnav .icon {
@@ -67,7 +81,8 @@ body {
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: white;
+  background: lightblue;
   color: black;
 }
 
@@ -219,8 +234,10 @@ img {vertical-align: middle;}
   font-size: 15px;
 }
 
+/*Drop down menu within background*/
 .active, #collapsible:hover {
-  background-color: #000080;
+  border-radius: 25px;
+  background-color: #2727fc;
   transition: 0.3s;  
 }
 
@@ -243,3 +260,111 @@ img {vertical-align: middle;}
   	background-color: #000080;
   	transition: 0.3s;  
 }
+
+
+/* STYLE FOR EVERYTHING AFTER FIRST DIV SECTION - COLUMNS*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #ffffff;
+
+}
+
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  border-radius: 25px;
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  border-radius:30px;
+  background-color: #f4fbfd;
+  box-shadow: 0 4px 8px 0 rgba(91, 3, 185, 0.2);
+  margin: 4px;
+  text-align: center;
+}
+
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #fafafa;
+  color: rgb(255, 255, 255);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: rgb(128, 108, 108);
+}
+
+.button {
+  border-radius:30px;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Start of hours of operation stylings */
+.hrstable{
+  border:1px solid black;
+  width: 100%;
+}
+
+.hrstable th{
+  border:1px solid black;
+  font-size:15px;
+}
+
+.hrstable th a{
+  font-size:15px;
+  text-align: center;
+  padding: 5px;
+}
+
+.hrstable td{
+  border:1px solid black;
+  font-size:15px;
+  padding: 2px;
+  text-align: center;
+}
+
+/* End of hours of operation stylings */
