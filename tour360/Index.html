@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<<<<<<< HEAD:tour360/index.html
 <!---------------------------------------------HEADER------------------------------------------------------>
 <header>
 
 
   <link rel="stylesheet" href="css/styles.css"/> <!--STYLE SHEET IS 'tour360.css INSIDE CSS FOLDER'-->
+=======
+<link href="css/StyleSheet.css" rel="stylesheet">
+>>>>>>> main:tour360/Index.html
 
+</head>
+<body>
 
+<<<<<<< HEAD:tour360/index.html
 <!--- Start of NAV Bar code ---->
 
 <div class="topnav" id="myTopnav">
@@ -102,6 +110,75 @@
 		  </div><!--- End Library Information DIV --->
 		
 	  </div>	
+=======
+<!--- Start of NAV Bar code --->
+<div class="topnav" id="myTopnav">
+  <a href="https://libguides.southernct.edu/home" target="_blank" class="active">Home</a>
+  <div class="dropdown">
+  <button class="dropbtn">About<i class="fa fa-caret-down"></i></button>
+	<div class="dropdown-content"> <!--- Start of About Button DIV --->
+		<button type="button" id= "collapsible" class="collapsible">Hours</button>
+		<div class="fodPrevDiv"><!--- Start Library Information DIV --->
+		<br>
+		<h4 style="text-align:center;">Phone Number: </h4>
+		<h4 style="text-align:center;">Email: </h4>
+		<br>
+		</div><!--- End Library Information DIV --->
+		<button type="button" id= "collapsible" class="collapsible">Bulletins</button>
+		<div class="fodPrevDiv"><!--- Start Library Information DIV --->
+		<br>
+		<h4 style="text-align:center;">Phone Number: </h4>
+		<h4 style="text-align:center;">Email: </h4>
+		<br>
+		</div><!--- End Library Information DIV --->
+		<button type="button" id= "collapsible" class="collapsible">Resources</button>
+		<div class="fodPrevDiv"><!--- Start Library Information DIV --->
+		<br>
+		<h4 style="text-align:center;">Phone Number: </h4>
+		<h4 style="text-align:center;">Email: </h4>
+		<br>
+		</div><!--- End Library Information DIV --->
+	</div> <!--- End of About Button DIV --->
+	
+  
+  </div>
+  <div class="dropdown">
+  <button class="dropbtn">360 Tour <i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content">
+      <a href="#">Floor 1</a>
+      <a href="#">Floor 2</a>
+      <a href="#">Floor 3</a>
+	  <a href="#">Floor 4</a>
+	  <a href="#">Basement</a>
+    </div>
+  </div>
+  <div class="dropdown">
+  <button class="dropbtn">Contact<i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content">
+	  <!--- Library Information Button --->
+	   <button type="button" id= "collapsible" class="collapsible">Front Desk</button>
+		<div class="fodPrevDiv">
+		<br>
+		<h4 style="text-align:center;">Phone Number: </h4>
+		<h4 style="text-align:center;">Email: </h4>
+		<br>
+		</div>
+	  <button type="button" id= "collapsible" class="collapsible">Help Desk</button>
+		<div class="fodPrevDiv">
+		<br>
+		<h4 style="text-align:center;">Phone Number: </h4>
+		<h4 style="text-align:center;">Email: </h4>
+		<br>
+		</div>
+	  <button type="button" id= "collapsible" class="collapsible">Security</button>
+		<div class="fodPrevDiv">
+		<br>
+		<h4 style="text-align:center;">Phone Number: </h4>
+		<h4 style="text-align:center;">Email: </h4>
+		<br>
+		</div>
+	  
+>>>>>>> main:tour360/Index.html
 	</div>
 	
 	<div class="dropdown">
@@ -186,10 +263,62 @@
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
+<!--- End of Slideshow Code --->
 
-<!--JAVASCRIPT-->
 
-<script src="js/script.js"></script>
+<script>
 
-</header>
+<!-- Start of NAVBAR JS ---> 
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+<!-- End of NAVBAR JS ---> 
+
+<!-- Start of Slideshow JS ---> 
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+<!--- End of Slideshow JS --->
+
+<!--- Start of collapsible sections JS --->
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+<!--- End of collapseable sections JS --->
+
+</script>
+
+</body>
 </html>
