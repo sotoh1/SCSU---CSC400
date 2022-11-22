@@ -5,7 +5,7 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: #79797B;
+  background-color: #020000;
 }
 
 .topnav a {
@@ -20,8 +20,17 @@ body {
 }
 
 .active {
-  background-color: #081993;
+  color: rgb(255, 251, 251);
   color: white;
+}
+
+.dropdowntext{
+  border-radius: 25px;
+}
+
+/*HOMEPAGE BUTTON COLOR*/
+.homecolor{
+  background-color: #081993; 
 }
 
 .topnav .icon {
@@ -29,6 +38,8 @@ body {
 }
 
 .dropdown {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
   float: left;
   overflow: hidden;
 }
@@ -45,9 +56,13 @@ body {
 }
 
 .dropdown-content {
+  border-radius: 25px; /*360 tour dropdown*/
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: rgb(255, 255, 255); /*REMOVES BACKGROUND*/
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -55,24 +70,25 @@ body {
 
 .dropdown-content a {
   float: none;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 18px;
   text-decoration: none;
   display: block;
   text-align: left;
-  background-color: #4682b4;
+  background-color: #2727fc;
   font-family:Arial;
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #cdcdcd;
+  background-color: #2727fc;
   color: white;
 }
 
 .dropdown-content a:hover {
-  background-color: #000080;
-  transition: 0.3s; 
-  color: white;
+  background-color: white;
+  background: lightblue;
+  color: black;
+  transition: 0.3s;
 }
 
 .dropdown:hover .dropdown-content {
@@ -117,8 +133,10 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
+  height: 100%;
+  width: 100%;
   max-width: 1000px;
-  max-height: 100%;
+  max-height: 900px;
   position: relative;
   margin: auto;
 }
@@ -211,11 +229,13 @@ img {vertical-align: middle;}
 	padding:5px;
 	display: none; 
 	width:100%;
+	border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 25px;
 }
 
 
 .collapsible{
-  background-color: #4682b4;
+  background-color: #2727fc;
   color: white;
   cursor: pointer;
   padding: 18px;
@@ -229,7 +249,8 @@ img {vertical-align: middle;}
 }
 
 .active, #collapsible:hover {
-  background-color: #000080;
+  background-color: lightblue;
+  color: black;
   transition: 0.3s; 
   font-family:Arial;
 }
@@ -250,7 +271,7 @@ img {vertical-align: middle;}
 }
 
 #metricsButton:hover {
-  	background-color: #000080;
+  	background-color: #0505fa4c;
   	transition: 0.3s;  
 }
 
@@ -279,3 +300,17 @@ img {vertical-align: middle;}
 }
 
 /* End of hours of operation stylings */
+
+img {
+   max-width: 100%;
+   max-height: 20%;   
+}
+
+.bannerDiv{
+  background-color: #020000;
+  padding: 5px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
