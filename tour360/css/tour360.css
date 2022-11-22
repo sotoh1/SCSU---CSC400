@@ -1,6 +1,7 @@
 
 body {
-	margin:0;font-family:Arial
+	margin:0;font-family:Arial;
+  background-color: rgb(164, 144, 144);
 }
 
 /*CENTER FOR 360 TOUR div */
@@ -8,13 +9,16 @@ body {
   border-radius: 25px;
   display: block;
   margin-left: auto;
+  position: relative; /*shifts image down along with top*/
+  top: 10px;
   margin-right: auto;
   width: 50%;
 }
 
 .topnav {
+  
   overflow: hidden;
-  background-color: #79797B;
+  background-color: #020000;
 }
 
 .topnav a {
@@ -27,7 +31,6 @@ body {
   font-size: 25px;
 }
 
-
 .hov{
   color: #79797B;
   ;
@@ -37,11 +40,23 @@ body {
   color: rgb(255, 251, 251);
 }
 
+.dropdowntext{
+  border-radius: 25px;
+}
+
+/*HOMEPAGE BUTTON COLOR*/
+.homecolor{
+  background-color: #081993; 
+}
+
 .topnav .icon {
   display: none;
 }
 
 .dropdown {
+  /*border-radius: 25px; /*NAV BAR ROUND EXCEPT FOR HOME*/
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
   float: left;
   overflow: hidden;
 }
@@ -58,9 +73,13 @@ body {
 }
 
 .dropdown-content {
+  /*border-radius: 25px; /*360 tour dropdown*/
+  border-top-right-radius: 25px;
+  /*border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;*/
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: rgb(255, 255, 255); /*REMOVES BACKGROUND*/
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -68,7 +87,8 @@ body {
 
 .dropdown-content a {
   float: none;
-  color: black;
+  color: rgb(255, 255, 255);
+  background-color: #2727fc;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -76,11 +96,12 @@ body {
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #cdcdcd;
+  background-color: #2727fc;
   color: white;
 }
 
 .dropdown-content a:hover {
+  /*border-radius: 25px; /*floor selection*/
   background-color: white;
   background: lightblue;
   color: black;
@@ -214,6 +235,7 @@ img {vertical-align: middle;}
 }
 }
 
+
 .fodPrevDiv{
 	margin: auto;
 	border: 3px solid white; 
@@ -223,7 +245,8 @@ img {vertical-align: middle;}
 }
 
 #collapsible {
-  background-color: #4682b4;
+  /*border-radius: 25px; /*drop down hours, resources etc**/
+  background-color: #2727fc;
   color: white;
   cursor: pointer;
   padding: 18px;
@@ -231,13 +254,17 @@ img {vertical-align: middle;}
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 25px;
 }
 
 /*Drop down menu within background*/
+
 .active, #collapsible:hover {
-  border-radius: 25px;
-  background-color: #2727fc;
+  /*border-radius: 25px;*/
+  /*border-top-right-radius: 25px;*/
+  background-color:lightblue;
+
+  color: black;
   transition: 0.3s;  
 }
 
@@ -257,7 +284,7 @@ img {vertical-align: middle;}
 }
 
 #metricsButton:hover {
-  	background-color: #000080;
+  	background-color: #0505fa4c;
   	transition: 0.3s;  
 }
 
@@ -270,8 +297,6 @@ body {
   background-color: #ffffff;
 
 }
-
-
 
 html {
   box-sizing: border-box;
@@ -297,7 +322,6 @@ html {
   text-align: center;
 }
 
-
 .about-section {
   padding: 50px;
   text-align: center;
@@ -316,7 +340,12 @@ html {
 }
 
 .title {
-  color: rgb(128, 108, 108);
+  color: slategray;
+}
+
+.title:hover{
+  color:darkblue;
+
 }
 
 .button {
@@ -333,7 +362,7 @@ html {
 }
 
 .button:hover {
-  background-color: #555;
+  background-color: darkblue;
 }
 
 @media screen and (max-width: 650px) {
