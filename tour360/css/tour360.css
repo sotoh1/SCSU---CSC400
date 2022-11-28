@@ -15,6 +15,8 @@ body {
   width: 50%;
 }
 
+
+
 .topnav {
   
   overflow: hidden;
@@ -29,6 +31,7 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 25px;
+  font-family:Arial
 }
 
 .hov{
@@ -73,10 +76,10 @@ body {
 }
 
 .dropdown-content {
-  /*border-radius: 25px; /*360 tour dropdown*/
+  border-radius: 25px; /*360 tour dropdown*/
   border-top-right-radius: 25px;
-  /*border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;*/
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
   display: none;
   position: absolute;
   background-color: rgb(255, 255, 255); /*REMOVES BACKGROUND*/
@@ -241,7 +244,10 @@ img {vertical-align: middle;}
 	border: 3px solid white; 
 	line-height: 1;
 	padding:5px;
-	display: none
+	display: none;
+  width: 100%;
+  border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 25px;
 }
 
 #collapsible {
@@ -255,6 +261,7 @@ img {vertical-align: middle;}
   text-align: left;
   outline: none;
   font-size: 25px;
+  display: inline-block;
 }
 
 /*Drop down menu within background*/
