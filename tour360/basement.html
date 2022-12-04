@@ -4,158 +4,144 @@
 
 <!---------------------------------------------HEADER------------------------------------------------------>
 <header>
-    <style>
-        a { text-decoration: none; }
-      </style>
+  <link rel="stylesheet" href="css/tour360.css"/> 
 
-  <link rel="stylesheet" href="css/tour360.css"/> <!--STYLE SHEET IS 'tour360.css INSIDE CSS FOLDER'-->
 
 
 <!--- Start of NAV Bar code --->
-
 <div class="topnav" id="myTopnav">
-  <a href="index.html" class="homecolor">Home</a>
-  <div class="dropdown">
-  <button class="dropbtn">About<i class="fa fa-caret-down"></i></button>
-
-	<div class="dropdown-content">
-      <!-- <a href="#">Library Information</a> -->
-	  <!--- Library Information Button --->
-	   <button type="button" id= "collapsible" class="collapsible" style="border-top-right-radius: 25px;">Hours</button>
+	<div class="dropdown">
+		<a href="Index.html" class="dropbtn" class="toplogos">HOME</a>
+	</div>
+	<div class="dropdown">
+	<button type="button" id= "collapsible" class="dropbtn">About<i class="fa fa-caret-down"></i></button>
+	<div class="dropdown-content"> <!--- Start of About Button DIV --->
+		<button type="button" id= "collapsible" class="collapsible">Hours</button>
 		<div class="fodPrevDiv"><!--- Start Library Information DIV --->
-		<div class="buttonsDiv"><!--- Start Button Conatainer DIV --->
-		<br>
-
-        	<!--Edit Info-->
-        	<table class="hrstable">
-			<tr>
-				<th>Note: Hours may change for holidays</th>
-				<th>Sunday</th>
-				<th>Monday</th>
-				<th>Tuesday</th>
-				<th>Wednesday</th>
-				<th>Thursday</th>
-				<th>Friday</th>
-				<th>Saturday</th>					
-			</tr>
-			<tr>
-				<th><a href="https://libguides.southernct.edu/home/" target="_blank">Hilton C. Buley Library</a></th>
-				<td>3pm - 11pm</td>
-				<td>8am - 11pm</td>
-				<td>8am - 11pm</td>
-				<td>8am - 11pm</td>
-				<td>8am - 11pm</td>
-				<td>8am - 4:30pm</td>
-				<td>9am - 5pm</td
-			</tr>
-			<tr>
-				<th><a href="https://libguides.southernct.edu/updates/libraryhelp" target="_blank">Research & Information Desk</a></th>
-				<td>3pm - 8pm</td>
-				<td>9am - 8pm</td>
-				<td>9am - 7pm</td>
-				<td>9am - 8pm</td>
-				<td>9am - 7pm</td>
-				<td>9am - 4:30pm</td>
-				<td>12pm - 5pm</td
-			</tr>
-			<tr>
-				<th><a href="https://libguides.southernct.edu/home" target="_blank">Library Online Resources</a></th>
-				<td>24 Hours</td>
-				<td>24 Hours</td>
-				<td>24 Hours</td>
-				<td>24 Hours</td>
-				<td>24 Hours</td>
-				<td>24 Hours</td>
-				<td>24 Hours</td>
-			</tr>
-			<tr>
-				<th><a href="https://libanswers.southernct.edu/" target="_blank">Ask a Librarian Online</a></th>
-				<td>3pm - 8pm</td>
-				<td>9am - 8pm</td>
-				<td>9am - 7pm</td>
-				<td>9am - 8pm</td>
-				<td>9am - 7pm</td>
-				<td>9am - 4:30pm</td>
-				<td>12pm - 5pm</td
-			</tr>
-		</table>
-
-		<br>
-		</div><!--- End Button Conatainer DIV --->
+			<table class="hrstable">
+				<tr>
+					<th>Note: Hours may change for holidays</th>
+					<th>Sunday</th>
+					<th>Monday</th>
+					<th>Tuesday</th>
+					<th>Wednesday</th>
+					<th>Thursday</th>
+					<th>Friday</th>
+					<th>Saturday</th>					
+				</tr>
+				<tr>
+					<th class="homecolor_hover"><a href="https://libguides.southernct.edu/home/" target="_blank">Hilton C. Buley Library</a></th>
+					<td>3pm - 11pm</td>
+					<td>8am - 11pm</td>
+					<td>8am - 11pm</td>
+					<td>8am - 11pm</td>
+					<td>8am - 11pm</td>
+					<td>8am - 4:30pm</td>
+					<td>9am - 5pm</td
+				</tr>
+				<tr>
+					<th><a href="https://libguides.southernct.edu/updates/libraryhelp" target="_blank">Research & Information Desk</a></th>
+					<td>3pm - 8pm</td>
+					<td>9am - 8pm</td>
+					<td>9am - 7pm</td>
+					<td>9am - 8pm</td>
+					<td>9am - 7pm</td>
+					<td>9am - 4:30pm</td>
+					<td>12pm - 5pm</td
+				</tr>
+				<tr>
+					<th><a href="https://libguides.southernct.edu/home" target="_blank">Library Online Resources</a></th>
+					<td>24 Hours</td>
+					<td>24 Hours</td>
+					<td>24 Hours</td>
+					<td>24 Hours</td>
+					<td>24 Hours</td>
+					<td>24 Hours</td>
+					<td>24 Hours</td>
+				</tr>
+				<tr>
+					<th><a href="https://libanswers.southernct.edu/" target="_blank">Ask a Librarian Online</a></th>
+					<td>3pm - 8pm</td>
+					<td>9am - 8pm</td>
+					<td>9am - 7pm</td>
+					<td>9am - 8pm</td>
+					<td>9am - 7pm</td>
+					<td>9am - 4:30pm</td>
+					<td>12pm - 5pm</td
+				</tr>
+			</table>
+		</div>
+		<!--- End Library Information DIV --->
+		
+		<!-- Bulletins -->
+		<button type="button" id= "collapsible" class="collapsible">Bulletins</button>
+		<div class="fodPrevDiv">		
+			<a href="https://libguides.southernct.edu/ld.php?content_id=66807705" class="dropdowntext">Spring 2022 Volume 19 Issue 1</a>
+		</div>
+		
+		
+		<button type="button" id= "collapsible" class="collapsible">Resources</button>
+		<div class="fodPrevDiv"><!--- Start Library Information DIV --->	
+        <a href="https://libguides.southernct.edu/directory" class="dropdowntext" style="border-bottom-right-radius: 25px;">Directory</a>
 		</div><!--- End Library Information DIV --->
-	  <button type="button" id= "collapsible" class="collapsible">Bulletins</button>
-		<div class="fodPrevDiv"><!--- Start Library Information DIV --->
-		<div class="buttonsDiv"><!--- Start Button Conatainer DIV --->
-
-		<br>
-		<a href="https://libguides.southernct.edu/ld.php?content_id=66807705" class="dropdowntext">Spring 2022
-            Volume 19 Issue 1</a>
-		<br>
-
-		</div><!--- End Button Conatainer DIV --->
-		</div><!--- End Library Information DIV --->
-	  <button type="button" id= "collapsible" class="collapsible" style="border-bottom-right-radius: 25px; border-bottom-left-radius: 25px;">Resources</button>
-		<div class="fodPrevDiv"><!--- Start Library Information DIV --->
-		<div class="buttonsDiv"><!--- Start Button Conatainer DIV --->
-		<br>
-        <a href="https://libguides.southernct.edu/directory" class="dropdowntext">Directory</a>
-		<br>
-		</div><!--- End Button Conatainer DIV --->
-		</div><!--- End Library Information DIV --->
+	</div> <!--- End of About Button DIV --->
 	  
-	</div>	
+
   </div>
-  
   <div class="dropdown">
-  <button class="dropbtn">360 Tour <i class="fa fa-caret-down"></i></button>
-  <div class="dropdown-content" style="border-bottom-left-radius: 25px; border-bottom-right-radius: 25px;">
-		<a href="floor1.html" style="border-top-right-radius: 25px;">Floor 1</a>
+	<button type="button" id= "collapsible" class="dropbtn">360 Tour<i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-content">
+		<a href="floor1.html">Floor 1</a>
 		<a href="floor2.html">Floor 2</a>
 		<a href="floor3.html">Floor 3</a>
-		<a href="floor4.html" style="border-bottom-left-radius: 25px; border-bottom-right-radius: 25px;">Floor 4</a>
+		<a href="floor4.html">Floor 4</a>
     </div>
   </div>
 
-
   <div class="dropdown">
-  <button class="dropbtn">Contact<i class="fa fa-caret-down"></i></button>
-    <div class="dropdown-content">
-      <!-- <a href="#">Library Information</a> -->
-	  <!--- Library Information Button --->
-	   <button type="button" id= "collapsible" class="collapsible" style="border-top-right-radius: 25px;">Front Desk</button>
-		<div class="fodPrevDiv"><!--- Start Library Information DIV --->
-		<div class="buttonsDiv"><!--- Start Button Conatainer DIV --->
-		<br>
-		<h4 style="text-align:center;">Phone Number: (203) 392-5732 </h4>
-		<h4 style="text-align:center;">Email: library@southernct.libanswers.com</h4>
-		<br>
-		</div><!--- End Button Conatainer DIV --->
-		</div><!--- End Library Information DIV --->
-	  <button type="button" id= "collapsible" class="collapsible">Help Desk</button>
-		<div class="fodPrevDiv"><!--- Start Library Information DIV --->
-		<div class="buttonsDiv"><!--- Start Button Conatainer DIV --->
-		<br>
-		<h4 style="text-align:center;">Phone Number: (203) 392-5768</h4>
-		<h4 style="text-align:center;">Email: Aschenbachj1@southernct.edu</h4>
-		<br>
-		</div><!--- End Button Conatainer DIV --->
-		</div><!--- End Library Information DIV --->
-	  <button type="button" id= "collapsible" class="collapsible" style="border-bottom-right-radius: 25px; border-bottom-left-radius: 25px;">Security</button>
-		<div class="fodPrevDiv"><!--- Start Library Information DIV --->
-		<div class="buttonsDiv"><!--- Start Button Conatainer DIV --->
-		<br>
-		<h4 style="text-align:center;">Phone Number: (203) 392-5375</h4>
-		<h4 style="text-align:center;">Email: library@southernct.libanswers.com</h4>
-		<br>
-		</div><!--- End Button Conatainer DIV --->
-		</div><!--- End Library Information DIV --->
-	  
+	<button type="button" id= "collapsible" class="dropbtn">Contact<i class="fa fa-caret-down"></i></button>
+	  <div class="dropdown-content">
+		  <button type="button" id= "collapsible" class="collapsible">Front Desk</button><!--- Front Desk Button --->
+		  <div class="fodPrevDiv"><!--- Start Information DIV --->
+			  <p style="text-align:center;">Phone Number: (203) 392-5732 </p>
+			  <p style="text-align:center;">Email: library@southernct.libanswers.com</p>
+			  <div class="buttonsDiv"><!--- Start Contact Button Conatainer DIV --->
+				  <a href="tel:2033925732" class="contact_dropdowntext">Call</a>
+				  <a href="mailto:library@southernct.libanswers.com" class="contact_dropdowntext">Email</a>
+			  </div><!--- End Contact Button Conatainer DIV --->
+		  </div><!--- End Information DIV --->
+			
+		  <button type="button" id= "collapsible" class="collapsible">Help Desk</button><!--- Help Desk Button --->
+		  <div class="fodPrevDiv"><!--- Start Information DIV --->
+			  <p href="#" style="text-align:center;">Phone Number: (203) 392-5768</p>
+			  <p href="#" style="text-align:center;">Email: Aschenbachj1@southernct.edu</p>
+			
+			  <div class="buttonsDiv"><!--- Start Button Conatainer DIV --->
+				  <a href="tel:2033925768" class="contact_dropdowntext">Call</a>
+				  <a href="mailto:Aschenbachj1@southernct.edu" class="contact_dropdowntext">Email</a>
+			  </div><!--- End Button Conatainer DIV --->
+		  </div><!--- End  Information DIV --->
+			
+		  <button type="button" id= "collapsible" class="collapsible">Security</button><!--- Security Desk Button --->
+		  <div class="fodPrevDiv"><!--- Start Information DIV --->
+			  <p style="text-align:center;">Phone Number: (203) 392-5375</p>
+			  <p style="text-align:center;">Email: library@southernct.libanswers.com</p>
+			
+			  <div class="buttonsDiv"><!--- Start Button Conatainer DIV --->
+				  <a href="tel:2033925375" class="contact_dropdowntext">Call</a>
+				  <a href="mailto:mailto:library@southernct.libanswers.com" class="contact_dropdowntext">Email</a>
+			  </div><!--- End Button Conatainer DIV --->
+		  </div><!--- End  Information DIV --->	
+		
+	  </div>
 	</div>
+	<div class="dropdown">
+	  <a href="https://account.activedirectory.windowsazure.com/applications/signin/8e82d089-e7a1-4712-a91b-4d4990846d14?tenantId=58736863-d60e-40ce-95c6-0723c7eaaf67" target="_blank" class="dropbtn">Primo Login</a>
   </div>
+  
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
-<!--- End of NAV Bar code --->
-
+  </div>
+  <!--- End of NAV Bar code --->
 
 
 
@@ -164,34 +150,28 @@
 <div class="slideshow-container">
 </br>
 <div class="mySlides fade">
-  <!-- <img src="img/comingsoon2.jpeg" style="width:45%" class="center"> -->
   <center><iframe width="80%" height="640" frameborder="0" allow="xr-spatial-tracking; gyroscope; accelerometer" allowfullscreen scrolling="no" src="https://kuula.co/share/collection/79HYy?logo=0&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=1"></iframe></center>
   <div class="text"></div>
 </div>
-</div>
 
-<br>
+
 
 <!--DROP DOWN FUNCTION-->
 
 <div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-
-<!--JAVASCRIPT-->
-
-<script src="js/script.js"></script>
+	<span class="dot" onclick="currentSlide(1)"></span> 
+	<span class="dot" onclick="currentSlide(2)"></span> 
+	<span class="dot" onclick="currentSlide(3)"></span>
+	<span class="dot" onclick="currentSlide(4)"></span> 
+	<span class="dot" onclick="currentSlide(5)"></span> 
+	<span class="dot" onclick="currentSlide(6)"></span>
+	<span class="dot" onclick="currentSlide(7)"></span>  
+</div> 
 
 
 <!--2ND HALF OF PAGE div - COLUMNS-->
-
-
 <h1 style="text-align:center">BASEMENT</h1>
 <div class="row">
-
-
   <div class="column">
     <div class="card">
       <img src="img/books.png" alt="" style="width:80%" class="center">
@@ -235,8 +215,23 @@
       </div>
     </div>
   </div>
+
   
- </div>
- 
+<!-- Start of Footer -->
+<div class="scsuLogo">
+	<img src="mainPageImgs/Southern_Connecticut_State_University.svg.png" class="mainlogos">
+</div>
+
+<div class="socMedLogos">
+	<a href="https://www.facebook.com/scsulibrary" target="_blank"><img src="mainPageImgs/FBLogo.png" class="soclogos"></a>
+	<a href="https://www.instagram.com/scsulibrary/" target="_blank"><img src="mainPageImgs/Insta.png" class="soclogos"></a>
+	<a href="https://twitter.com/SCSULibrary" target="_blank"><img src="mainPageImgs/twitter.png" class="soclogos"></a>
+</div>
+
+<!-- End of Footer -->
+
+
+<script src="js/script.js"></script>
+
 </header>
 </html>

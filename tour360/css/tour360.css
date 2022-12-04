@@ -1,7 +1,7 @@
-
 body {
-	margin:0;font-family:Arial;
-  background-color: rgb(164, 144, 144);
+	margin:0;
+  font-family:Arial;
+  background-color:black;
 }
 
 /*CENTER FOR 360 TOUR div */
@@ -15,10 +15,7 @@ body {
   width: 50%;
 }
 
-
-
 .topnav {
-  
   overflow: hidden;
   background-color: #020000;
 }
@@ -34,13 +31,9 @@ body {
   font-family:Arial
 }
 
-.hov{
-  color: #79797B;
-  ;
-}
-
 .active {
   color: rgb(255, 251, 251);
+  color: white;
 }
 
 .dropdowntext{
@@ -52,14 +45,19 @@ body {
   background-color: #081993; 
 }
 
+.homecolor_hover th   a:hover{
+  background-color: red;
+  opacity: 0.8;  
+}
+
 .topnav .icon {
   display: none;
 }
 
 .dropdown {
-  /*border-radius: 25px; /*NAV BAR ROUND EXCEPT FOR HOME*/
+  /*border-radius: 25px; /*NAV BAR ROUND EXCEPT FOR HOME
   border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  border-top-right-radius: 25px;*/
   float: left;
   overflow: hidden;
 }
@@ -71,15 +69,15 @@ body {
   color: white;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit;
+  font-family:Arial;
   margin: 0;
 }
 
 .dropdown-content {
-  border-radius: 25px; /*360 tour dropdown*/
+  /*border-radius: 25px; /*360 tour dropdown
   border-top-right-radius: 25px;
   border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
+  border-bottom-right-radius: 25px;*/
   display: none;
   position: absolute;
   background-color: rgb(255, 255, 255); /*REMOVES BACKGROUND*/
@@ -96,19 +94,38 @@ body {
   text-decoration: none;
   display: block;
   text-align: left;
+  background-color: #2727fc;
+  font-family:Arial;
 }
 
-.topnav a:hover, .dropdown:hover .dropbtn {
+.dropdown:hover .dropbtn {
+  /* background-color: #2727fc; */
+  background: rgb(39,39,252);
+  background: linear-gradient(0deg, rgba(39,39,252,1) 0%, rgba(0,0,0,1) 99%);
+  color: white;
+  transition: 0.3s ease;
+}
+
+/*.topnav a:hover, .dropdown:hover .dropbtn {
   background-color: #2727fc;
   color: white;
-}
+}*/
+
+/* Icon/Home Button */
+.topnav a:hover{
+  background-color: #2727fc;
+  color: white;
+} 
+
 
 .dropdown-content a:hover {
-  /*border-radius: 25px; /*floor selection*/
-  background-color: white;
-  background: lightblue;
+  background: rgb(39,39,252);
+  background: linear-gradient(273deg, rgba(39,39,252,1) 11%, rgba(192,192,245,1) 83%);
   color: black;
+  transition: 0.3s ease;
 }
+
+
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -152,7 +169,10 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
+  height: 100%;
+  width: 100%;
   max-width: 1000px;
+  max-height: 900px;
   position: relative;
   margin: auto;
 }
@@ -239,19 +259,48 @@ img {vertical-align: middle;}
 }
 
 
-.fodPrevDiv{
-	margin: auto;
-	border: 3px solid white; 
+/*.fodPrevDiv{
+	margin: 0 auto;
 	line-height: 1;
-	padding:5px;
+	padding:10px;
+	display: none; 
+	max-width: 100%;
+	overflow-x:auto;
+	background-color: black;
+	/* opacity: 0.2; */
+	/*color: white;*/
+/*}*/
+
+.fodPrevDiv{
+	margin: 0 auto;
+	line-height: 1;
+	padding:10px;
 	display: none;
-  width: 100%;
-  border-bottom-right-radius: 25px;
-	border-bottom-left-radius: 25px;
+	max-width: 100%;
+	overflow-x:auto;
+	background-color: black;
+	/* opacity: 0.2; */
+	color: white;
 }
 
-#collapsible {
-  /*border-radius: 25px; /*drop down hours, resources etc**/
+.buttonsDiv {
+  margin: 0 auto;
+display: table;
+width: 100%;
+vertical-align: middle;
+}
+
+.buttonsDiv a {
+display: inline-block;
+vertical-align: middle;
+border-radius: 25px;
+border: 2px solid white;
+width:40%;
+text-align: center;
+}
+
+/*#collapsible {
+  /*border-radius: 25px; /*drop down hours, resources etc*
   background-color: #2727fc;
   color: white;
   cursor: pointer;
@@ -262,21 +311,34 @@ img {vertical-align: middle;}
   outline: none;
   font-size: 25px;
   display: inline-block;
+}*/
+
+.collapsible{
+  background-color: #2727fc;
+  color: white;
+  cursor: pointer;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 25px;
+  font-family:Arial;
+  display: inline-block;
 }
 
 /*Drop down menu within background*/
 
-.active, #collapsible:hover {
-  /*border-radius: 25px;*/
-  /*border-top-right-radius: 25px;*/
-  background-color:lightblue;
-
+.active, .collapsible:hover/* , .dropdown-content a:hover  */{
+  background: rgb(39,39,252);
+  background: linear-gradient(273deg, rgba(39,39,252,1) 11%, rgba(192,192,245,1) 83%);
   color: black;
-  transition: 0.3s;  
+  transition: 0.3s ease; 
+  font-family:Arial;
 }
 
 
-#metricsButton {
+/*#metricsButton {
 	background-color: #4682b4;
   	color: white;
   	cursor: pointer;
@@ -293,7 +355,45 @@ img {vertical-align: middle;}
 #metricsButton:hover {
   	background-color: #0505fa4c;
   	transition: 0.3s;  
+}*/
+
+/* Start of hours of operation stylings */
+.hrstable{
+  border:1px solid white;
+  width: 100%;
 }
+
+.hrstable th{
+  border:1px solid white;
+  font-size:15px;
+  color: white;
+}
+
+.hrstable th a{
+  font-size:15px;
+  text-align: center;
+  padding: 5px;
+  background-color: #081993;
+  color: white;
+}
+
+/* .hrstable th a:hover{
+  font-size:15px;
+  text-align: center;
+  padding: 5px;
+  background-color: red;
+  opacity:0.8;
+} */
+
+.hrstable td{
+  border:1px solid white;
+  font-size:15px;
+  padding: 2px;
+  text-align: center;
+  color: white;
+}
+
+/* End of hours of operation stylings */
 
 
 /* STYLE FOR EVERYTHING AFTER FIRST DIV SECTION - COLUMNS*/
@@ -368,6 +468,9 @@ html {
   width: 100%;
 }
 
+a { text-decoration: none; }
+
+
 .button:hover {
   background-color: darkblue;
 }
@@ -379,28 +482,48 @@ html {
   }
 }
 
-/* Start of hours of operation stylings */
-.hrstable{
-  border:1px solid black;
-  width: 100%;
+/* Start of Footer Styling */
+
+.toplogos{
+	max-width: 40px;
+	max-height: 15px;
+	display: inline-block;
+	padding: 0px;
 }
 
-.hrstable th{
-  border:1px solid black;
-  font-size:15px;
+.mainlogos{
+	max-width:255px; 
+	max-height:60px;
+	padding: 5px;
 }
 
-.hrstable th a{
-  font-size:15px;
-  text-align: center;
-  padding: 5px;
+.soclogos{
+	max-width:50px; 
+	max-height:50px;
+	padding: 5px;
+
 }
 
-.hrstable td{
-  border:1px solid black;
-  font-size:15px;
-  padding: 2px;
-  text-align: center;
+.scsuLogo {
+/* 	border: solid white; */
+	display: table;
+	text-align: center;
+	width:100%;
 }
 
-/* End of hours of operation stylings */
+.socMedLogos{
+	/* border: solid red; */
+	display: table;
+	text-align: center;
+	width:100%;
+}
+
+@media screen and (max-width: 500px) {
+  .socMedLogos {
+    width: 100%;
+  }
+}
+
+/* End of Footer Styling */
+
+
