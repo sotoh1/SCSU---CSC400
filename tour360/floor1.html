@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!---------------------------------------------HEADER------------------------------------------------------>
-<header>
   <link rel="stylesheet" href="css/tour360.css"/> 
   <title>Buley Library Virtual Tour - FLOOR 1</title>
 
-	</header>
+</head>
 
+<body>
+<!--- Start of NAV Bar code --->
 <!--- Start of NAV Bar code --->
 <div class="topnav" id="myTopnav">
 	<div class="dropdown">
@@ -86,23 +88,23 @@
         <a href="https://libguides.southernct.edu/directory" class="dropdowntext" style="border-bottom-right-radius: 25px;">Directory</a>
 		</div><!--- End Library Information DIV --->
 	</div> <!--- End of About Button DIV --->
-	  
 	
+  
   </div>
   <div class="dropdown">
-	<button type="button" id= "collapsible" class="dropbtn">360 Tour<i class="fa fa-caret-down"></i></button>
+  <button type="button" id= "collapsible" class="dropbtn">360 Tour<i class="fa fa-caret-down"></i></button>
+	  <div class="dropdown-content">
+		<a href="basement.html">Basement</a>
+		<a href="floor1.html">Floor 1</a>
+		<a href="floor2.html">Floor 2</a>
+		<a href="floor3.html">Floor 3</a>
+		<a href="floor4.html">Floor 4</a>
+	  </div>
+  </div>
+  <div class="dropdown">
+  <button type="button" id= "collapsible" class="dropbtn">Contact<i class="fa fa-caret-down"></i></button>
     <div class="dropdown-content">
-      	<a href="basement.html">Basement</a>
-      	<a href="floor2.html">Floor 2</a>
-      	<a href="floor3.html">Floor 3</a>
-      	<a href="floor4.html">Floor 4</a>
-    </div>
-  </div>
-
-  <div class="dropdown">
-	<button type="button" id= "collapsible" class="dropbtn">Contact<i class="fa fa-caret-down"></i></button>
-	<div class="dropdown-content">
-		<button type="button" id= "collapsible" class="collapsible">Front Desk</button><!--- Front Desk Button --->
+        <button type="button" id= "collapsible" class="collapsible">Front Desk</button><!--- Front Desk Button --->
 		<div class="fodPrevDiv"><!--- Start Information DIV --->
 			<p style="text-align:center;">Phone Number: (203) 392-5732 </p>
 			<p style="text-align:center;">Email: library@southernct.libanswers.com</p>
@@ -111,36 +113,36 @@
 				<a href="mailto:library@southernct.libanswers.com" class="contact_dropdowntext">Email</a>
 			</div><!--- End Contact Button Conatainer DIV --->
 		</div><!--- End Information DIV --->
-		  
-		<button type="button" id= "collapsible" class="collapsible">Help Desk</button><!--- Help Desk Button --->
+		
+	    <button type="button" id= "collapsible" class="collapsible">Help Desk</button><!--- Help Desk Button --->
 		<div class="fodPrevDiv"><!--- Start Information DIV --->
 			<p href="#" style="text-align:center;">Phone Number: (203) 392-5768</p>
 			<p href="#" style="text-align:center;">Email: Aschenbachj1@southernct.edu</p>
-		  
+		
 			<div class="buttonsDiv"><!--- Start Button Conatainer DIV --->
 				<a href="tel:2033925768" class="contact_dropdowntext">Call</a>
 				<a href="mailto:Aschenbachj1@southernct.edu" class="contact_dropdowntext">Email</a>
 			</div><!--- End Button Conatainer DIV --->
 		</div><!--- End  Information DIV --->
-		  
+		
 		<button type="button" id= "collapsible" class="collapsible">Security</button><!--- Security Desk Button --->
 		<div class="fodPrevDiv"><!--- Start Information DIV --->
 			<p style="text-align:center;">Phone Number: (203) 392-5375</p>
 			<p style="text-align:center;">Email: library@southernct.libanswers.com</p>
-		  
+		
 			<div class="buttonsDiv"><!--- Start Button Conatainer DIV --->
 				<a href="tel:2033925375" class="contact_dropdowntext">Call</a>
-				<a href="mailto:mailto:library@southernct.libanswers.com" class="contact_dropdowntext">Email</a>
+				<a href="mailto:library@southernct.libanswers.com" class="contact_dropdowntext">Email</a>
 			</div><!--- End Button Conatainer DIV --->
-		</div><!--- End  Information DIV --->
-	  
-	</div>
-</div>
-<div class="dropdown">
-  <a href="https://account.activedirectory.windowsazure.com/applications/signin/8e82d089-e7a1-4712-a91b-4d4990846d14?tenantId=58736863-d60e-40ce-95c6-0723c7eaaf67" target="_blank" class="dropbtn">Primo Login</a>
-</div>
+		</div><!--- End  Information DIV --->	  
 
-<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+  </div>
+  <div class="dropdown">
+	<a href="https://account.activedirectory.windowsazure.com/applications/signin/8e82d089-e7a1-4712-a91b-4d4990846d14?tenantId=58736863-d60e-40ce-95c6-0723c7eaaf67" target="_blank" class="dropbtn">Primo Login</a>
+  </div>
+
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 <!--- End of NAV Bar code --->
 
@@ -148,10 +150,11 @@
 
 <!--- PLACE EMBEDDED CODE FOR TOUR HERE --->
 
-<br>
-
+</br>
+<div class="mySlides fade">
   <center><iframe width="80%" height="640" frameborder="0" allow="xr-spatial-tracking; gyroscope; accelerometer" allowfullscreen scrolling="no" src="https://kuula.co/share/collection/79cQ5?logo=0&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=1"></iframe></center>
-  
+</div>
+
 
 
 
@@ -240,5 +243,6 @@
 
 <script src="js/script.js"></script>
 
+</body>
 
 </html>
